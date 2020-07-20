@@ -1,0 +1,11 @@
+syntax="proto2";
+
+message Category {
+    required string name=1;
+    required int64 label=2;
+    optional string display_name=3;
+}
+
+message Categories{
+    repeated Category category=1;
+}
